@@ -1,43 +1,20 @@
 ##################################################
 '''
-Q1: 
+Task: 
 '''
 
-# TODO: Write your code here
+def bank():
+    current_balance = 1000
+    for year in range(1, 26, 1):
+        interest_rate = 6.5/100
+        interest = round(current_balance * interest_rate, 0)
+        deposit = 100
+        new_balance = round(current_balance + interest + deposit, 0)
 
-##################################################
-'''
-Q2:
-'''
+        print(f'{year}: current_balance: {current_balance}, interest: {interest}, deposit: {deposit}, new balance: {new_balance}')
 
-# TODO: Write your code here
+        current_balance = new_balance
 
-##################################################
-'''
-Q3:
-'''
-
-# TODO: Write your code here
-
-##################################################
-'''
-Q4:
-'''
-
-# TODO: Write your code here
-
-##################################################
-'''
-Q5:
-'''
-
-# TODO: Write your code here
-
-##################################################
-'''
-Q6:
-'''
-
-# TODO: Write your code here
+bank()
 
 ##################################################
